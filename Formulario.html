@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário | clientes</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
     <div class="box">
-      <form action="">
+      <form id="form">
         <fieldset>
-          <legend><b>Formulário de Crientes</b></legend>
+          <legend><b>Formulário de Clientes</b></legend>
           <br />
           <div class="inputBox">
             <input
@@ -48,11 +49,11 @@
             />
             <label for="telefone" class="labelInput">Telefone</label>
           </div>
-
+          
           <p>Sexo</p>
           <input
             type="radio"
-            id="feminino"
+            id="sexo"
             name="genero"
             value="feminino"
             required
@@ -61,22 +62,22 @@
           <br />
           <input
             type="radio"
-            id="masculino"
+            id="sexo"
             name="genero"
             value="masculino"
             required
           />
           <label for="masculino">Masculino</label>
           <br />
-          <input type="radio" id="outro" name="genero" value="outro" required />
+          <input type="radio" id="sexo" name="genero" value="outro" required />
           <label for="outro">Outro</label>
           <br /><br />
-
+          
           <label for="data_nascimento"><b>Data de Nascimento</b></label>
           <input
             type="date"
-            name="data_nascimento"
-            id="data_nascimento"
+            name="data"
+            id="data"
             required
           />
           <br /><br />
@@ -121,6 +122,5 @@
         </fieldset>
       </form>
     </div>
-    <script src=""></script>
   </body>
 </html>
